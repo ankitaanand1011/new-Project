@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    </head>
+    <body style="font-family:Monospace; font-size: 12px; margin: 0;">
+        <table style="width: 100%; margin: auto;">
+
+                <tr>
+                    <td>
+                        <table style="width: 100%; margin: auto;">
+                                <tr>
+                                    <td style="text-align: center; font-weight: bold; font-size: 14px; padding: 5px 5px; border-bottom: 1px solid #ccc;">
+                                        <table style="width: 100%;">
+                                            <tr>
+                                                <td  style="text-align:center;  font-weight: bold;font-size:18px;">
+                                                    Drink Drop
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 5px 5px; border: 1px solid #ccc;">
+                                        <table style="width: 100%; margin-top: 10px;">
+                                                <tr>
+                                                    <td style="font-weight: bold; font-size: 12px;">OrderID : @OrderID@</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold; font-size: 12px;">Address :</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold; font-size: 12px;">@Name@</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: normal; font-size: 10px;">@Address@</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: normal; font-size: 10px;">@CityState@</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: normal; font-size: 10px;">@CountryZip@</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: normal; font-size: 10px;">Phn : @Mobile@</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold; font-size: 12px;">Date : @Date@</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold; font-size: 12px;">PaymentMode : @PaymentMode@</td>
+                                                </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table style="width: 100%; border-spacing: 0; border-collapse: collapse;">
+
+                                                <tr>
+                                                    <td style="font-weight: bold; font-size: 12px; padding: 5px 5px; border: 1px solid #ccc;">Name</td>
+                                                    <td style="text-align: right; font-weight: bold; font-size: 12px; padding: 5px 5px; border: 1px solid #ccc;">ID</td>
+                                                    <td style="text-align: right; font-weight: bold; font-size: 12px; padding: 5px 5px; border: 1px solid #ccc;">Qty</td>
+                                                    <td style="text-align: right; font-weight: bold; font-size: 12px; padding: 5px 5px; border: 1px solid #ccc;">Price</td>
+                                                </tr>
+                                                @InvoiceLines@
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table style="width: 100%;">
+                                                <tr>
+                                                    <td style="text-align: right; font-weight: bold; font-size: 12px;">Grand Total : JOD @GrandTotal@</td>
+                                                </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                        </table>
+                    </td>
+                </tr>
+
+        </table>
+    </body>
+</html>

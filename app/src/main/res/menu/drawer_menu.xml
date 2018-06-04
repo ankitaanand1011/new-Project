@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@mipmap/home"
+            android:checked="true"
+            />
+        <item
+            android:id="@+id/nav_order_received"
+            android:title="Order Received"
+            android:icon="@mipmap/ur_order96"/>
+        <item
+            android:id="@+id/nav_order_accepted"
+            android:title="Order Accepted"
+            android:icon="@mipmap/order_accepted"/>
+
+        <item
+            android:id="@+id/nav_order_schedule"
+            android:title="Order Schedule"
+            android:icon="@mipmap/schedule96"/>
+
+        <item
+            android:id="@+id/nav_Logout"
+            android:title="Logout"
+            android:icon="@mipmap/ur_order96"/>
+
+
+    </group>
+
+
+</menu>

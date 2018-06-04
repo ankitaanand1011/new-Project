@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_sl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sl."
+            android:textSize="11sp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/dark_grey"
+            android:layout_weight="1.1"
+            />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/tv_order_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Id"
+            android:textSize="11sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"
+            android:layout_weight="0.95"
+            />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/tv_delivery_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deliver On"
+            android:padding="5dp"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"
+            android:layout_weight="0.95"
+            />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"/>
+        <LinearLayout
+            android:id="@+id/ll_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.8">
+
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/dark_grey"
+            android:layout_weight="0.95"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

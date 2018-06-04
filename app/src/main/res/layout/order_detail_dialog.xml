@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:minHeight="400dp"
+        >
+        <LinearLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark"
+            android:baselineAligned="false">
+
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="All Reminders"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:padding="7dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:background="@color/colorAccent">
+
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="All Reminders"
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="start"
+                    android:contentDescription="@string/app_name"
+                  />
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="All Reminders"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="start"
+                android:contentDescription="@string/app_name"
+              />
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="All Reminders"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="start"
+                android:contentDescription="@string/app_name"
+              />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textSize="12sp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/tv_product_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Id"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1.1"
+                />
+
+            <TextView
+                android:id="@+id/tv_product_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qty"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1.2"
+                />
+
+            <TextView
+                android:id="@+id/tv_product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="0.95"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ll_main"
+            android:background="@color/light_grey"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_reminder_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_margin="10dp"
+           >
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_reminders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
